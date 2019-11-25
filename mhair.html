@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+h3 {
+  text-decoration: underline;
+  color: red;
+}
+body{
+ background-image: url("data:image/jpeg;base64,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");
+background-repeat: no-repeat;
+background-size: 1900px 2000px;
+}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+</style>
+</head>
+<body>
+
+<h2><i>MENS' HAIR PRODUCTS</i></h2>
+
+<p>"ALL MEN HAVE LONG HAIR. SOME CHOOSE TO CELEBRATE IT."</p>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>BEARDO Hair Wax, Strong Hold</h1>
+ <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/41U81ZRL4CL.jpg" alt="Card image" style="width:80%">
+<h2 style="text-align:center;">75g</h2>
+<h3 style="text-align:center;">225.00 Rs</h3>
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h1>UrbanGabru Hair Growth Serum - Hair fall control oil for Men</h1>
+<img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/71TuDpaOHWL._SL1500_.jpg" alt="Card image" style="width:30%">
+    <h2 style="text-align:center;">100GM</h2>
+<h3 style="text-align:center;">449.00 Rs</h3>
+
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h1>Blue Nectar Hair Tonic</h1>
+<img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/715tTmHI4uL._SL1100_.jpg" alt="Card image" style="width:100%">
+    <h2 style="text-align:center;">250ML</h2>
+<h3 style="text-align:center;">549.00 Rs</h3>
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+  </div>
+</div>
+    
+  
+  <div class="column">
+    <div class="card">
+      <h1>The EnQ Ultimate Hair Care Tonic Anti Dandruff Anti Hairfall 100%</h1>
+<img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/51QBT-bRgVL._SL1000_.jpg" alt="Card image" style="width:50%">
+      <h2 style="text-align:center;">200ML</h2>
+<h3 style="text-align:center;">699.00 Rs</h3>
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+  </div>
+</div>
+    </div>
+  </div>
+</div>
+
+<p>Hair wax is a thick hairstyling product containing wax, used to assist with holding the hair. In contrast with hair gel, most of which contain alcohol, hair wax remains pliable and has less chance of drying out.</p>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Park Avenue Damage Free Hair Beer Shampoo</h1>
+ <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/71Vcu%2BmufxL._SL1240_.jpg" alt="Card image" style="width:80%">
+<h2 style="text-align:center;">350ML</h2>
+<h3 style="text-align:center;">169.00 Rs</h3>
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Man Arden Activated Charcoal Shampoo With Argan Oil</h1>
+ <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61gObBBzXkL._SL1200_.jpg" alt="Card image" style="width:40%">
+<h2 style="text-align:center;">200ML</h2>
+<h3 style="text-align:center;">299.00 Rs</h3>
+
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>StBotanica Coconut & Bamboo Hair Conditioner</h1>
+ <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61xRVyPloLL._SL1200_.jpg" alt="Card image" style="width:50%">
+<h2 style="text-align:center;">300ML</h2>
+<h3 style="text-align:center;">349.00 Rs</h3>
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+
+    </div>
+  </div>
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h1>Man Arden Hair Spray - Strong Hold</h1>
+ <img class="card-img-top" src="https://images-na.ssl-images-amazon.com/images/I/61FpeLuYyOL._SL1200_.jpg" alt="Card image" style="width:100%">
+<h2 style="text-align:center;">600ML</h2>
+<h3 style="text-align:center;">664.00 Rs</h3>
+
+
+
+<form action="pay.html">
+  <input type="submit" value="ADD TO BAG">
+</form> 
+
+    </div>
+  </div>
+ 
+</body>
+</html>
